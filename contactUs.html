@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        .nav-link {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+.actives, .nav-link:hover {
+  background-color: orange;
+  color: white;
+}
+        .contact {
+            display: inline;
+            background-color: grey;
+            color: yellow;
+            margin-left: 50px;
+            padding: 5px;
+        }
+        .message-title {
+            display: inline;
+            background-color: grey;
+            color: yellow;
+        }
+        .contact-title {
+            display: inline;
+            background-color: grey;
+            color: yellow;
+        }
+        .send-message {
+            margin-left: 50px;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+                    <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                    <a class="nav-link active" aria-current="page" href="AboutUs.html">About Us</a>
+                    <a class="nav-link actives" aria-current="page" href="contactUs.html">Contact Us</a>
+                    <a class="nav-link active" aria-current="page" href="todos.html">Todos</a>
+                    <!--a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div><h1 class="contact">Contact</h1></div>
+    <br>
+    <br>
+    <div><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741107.7430897!2d-101.32137275694775!3d39.64628388363263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sid!4v1626620788957!5m2!1sen!2sid" width="2000px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p></div>
+    <br>
+    <div class="send-message row-cols-1 row-cols-md-2 g-4"><h3 class="message-title">SEND US A MESSAGE</h3>
+    <div class="message"><form action=""></form>
+        <br>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Email">
+    <input type="text" placeholder="Subject">
+    <br>
+    <br>
+    <textarea name="" id="" cols="75" rows="5" placeholder="Message"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+    </div>
+    <br>
+    <div class="contact-info"><h3 class="contact-title">CONTACT INFO</h3>
+    <div> <br> <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam ut impedit consequatur temporibus debitis asperiores beatae? Ut assumenda ipsam maiores culpa in eveniet iste, necessitatibus iusto adipisci fugiat et?</p>
+    <p>phone: +620841074</p>
+    <p>Email: blablabla@gmail.com</p>
+    </div></div>
+    </div>
+    <br>
+    <div class="position-relative d-inline">
+        <span class="d-block p-2 bg-dark text-white d-block">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos esse, voluptate accusamus cumque
+                vel
+                id autem assumenda nemo similique perferendis impedit est nostrum laboriosam inventore facilis quae
+                illum possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos esse, voluptate
+                accusamus cumque vel
+                id autem assumenda nemo similique perferendis impedit est nostrum laboriosam inventore facilis quae
+                illum possimus!</p>
+        </span>
+        </div>
+        <script>
+                                    var header = document.getElementById("navbar");
+var btns = header.getElementsByClassName("nav-link");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("actives");
+  current[0].className = current[0].className.replace(" actives", "");
+  this.className += " actives";
+  });
+}
+        </script>
+</body>
+</html>
